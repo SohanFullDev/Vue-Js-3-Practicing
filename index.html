@@ -16,6 +16,10 @@
           <h3 class="title">{{ item.title }}</h3>
           <p class="desc">{{ item.description }}</p>
           <p class="brand">{{ item.brand }}</p>
+          <div class="colors">
+           <!--  <span v-for="color in item.colors" :style="`background: ${color}`">{{ color }}</span> -->
+           <span v-for="color in item.colors" :style="`background: ${color}`"></span>
+          </div>
           <p class="price">{{ item.price }}</p>
 
         </div>

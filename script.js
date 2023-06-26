@@ -8,8 +8,9 @@ createApp({
                 title: "Symphony Phone",
                 description: "This is a very cool shoes with a cool color",
                 price: "50$",
-                brands: "Adidass",
+                brand: "Adidass",
                 img: './img/pic01.jpg',
+                colors: ["red", "green", "blue", "yellow"],
                 id: 1,
 
             },
@@ -17,8 +18,9 @@ createApp({
                 title: "Samsung Mobile",
                 description: "This is a Samsung Mobile with a cool color",
                 price: "500$",
-                brands: "Samsung",
+                brand: "Samsung",
                 img: './img/pic02.png',
+                colors: ["yellow", "red", "green", "purple", ],
                 id: 2,
 
             },
@@ -26,8 +28,9 @@ createApp({
                 title: "Apple Mobile",
                 description: "This is a Apple Mobile with a cool color",
                 price: "150$",
-                brands: "Apple",
+                brand: "Apple",
                 img: './img/pic03.jpg',
+                colors: ["blue","red", "orange",  "yellow"],
                 id: 3,
 
             },
@@ -35,9 +38,10 @@ createApp({
                 title: "Xiami Mobile",
                 description: "This is a Xiami Mobile with a cool color",
                 price: "150$",
-                brands: "Xiami",
+                brand: "Xiami",
                 img: './img/pic04.jpg',
-                id: 3,
+                colors: ["green", "black",  "blue", "yellow"],
+                id: 4,
 
             },
 
