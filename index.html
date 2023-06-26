@@ -11,9 +11,9 @@
 <body>
     <div id="app-root">
       <h3>His name is {{ name }}, His age is {{ age }}</h3>
-      <p v-if="age < 30">His age is younger than 30</p>
-      <p v-else-if="age == 30">His age is equal to 30</p>
-      <p v-if="age > 30">His age is older than 30</p>
+      <p v-show="age < 30">His age is younger than 30</p>
+      <p v-show="age == 30">His age is equal to 30</p>
+      <p v-show =" age > 30" >His age is older than 30</p>
       <button @click="age++">Increase age</button>
     </div>
 
