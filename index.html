@@ -10,11 +10,7 @@
 </head>
 <body>
     <div id="app-root">
-      <h3>His name is {{ name }}, His age is {{ age }}</h3>
-      <p v-show="age < 30">His age is younger than 30</p>
-      <p v-show="age == 30">His age is equal to 30</p>
-      <p v-show =" age > 30" >His age is older than 30</p>
-      <button @click="age++">Increase age</button>
+       <h2 v-for="(name, i) in students" :key="i">{{ name }}</h2>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
