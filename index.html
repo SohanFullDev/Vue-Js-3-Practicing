@@ -3,19 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Learning Vue Js 3
 
    </title>
 </head>
 <body>
     <div id="app-root">
-      <h2>Number one is: {{ numberOne }}</h2>
-      <h2>Number one X 2 = {{ numOneChange }}</h2>
-      <button @click="numberOne++">Number one change</button>
-      <h2>Number two is: {{ numberTwo }}</h2>
-      <h2>Number two + 10 = {{ numTwoChange }}</h2>
-      <button @click="numberTwo++">Number two change</button>
-
+        <h2 :class="myColor">My Title</h2>
+        <input type="text" v-model="myColor">
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

@@ -4,9 +4,8 @@ createApp({
     data(){
         return {
             
-             numberOne: 0,
-             numberTwo: 0,
-
+            title: "my_title",
+            myColor:"",
         };
     },
 methods: {},
