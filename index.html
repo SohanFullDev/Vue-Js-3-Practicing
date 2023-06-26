@@ -10,6 +10,8 @@
 </head>
 <body>
     <div id="app-root">
+        <h2 style="text-align: center;">Products</h2>
+        {{ name }}
        <div class="container">
         <div class="card" v-for="item in products" :key="item.id">
           <img :src="item.img" alt="">
@@ -27,7 +29,11 @@
        </div>
     </div>
    
+    <div id="app_root_2" class="students">
+      <h2 style="text-align: center;">Students</h2>
+      <h4 v-for="(name, i) in students" :key="i">{{ name }}</h4>
 
+    </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./script.js"></script>
 </body>

@@ -3,6 +3,7 @@ const { createApp} = Vue;
 createApp({
     data(){
         return {
+            name: "Ali",
           products: [
             {
                 title: "Symphony Phone",
@@ -53,3 +54,11 @@ createApp({
 
 }).mount("#app-root");
 
+createApp({
+    data(){
+        return {
+            name: 'Sohan',
+            students:["Sohan","Sujan", "Sachin","Pasha"],
+        };
+    },
+}).mount("#app_root_2");
