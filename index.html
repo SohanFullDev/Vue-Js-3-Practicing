@@ -10,7 +10,12 @@
 </head>
 <body>
     <div id="app-root">
-       <h2 v-for="(name, i) in students" :key="i">{{ name }}</h2>
+       <h2 v-for="student in students" :key="student.id">
+        <span>Student name is {{ student.name }}</span> <br>
+        <span>Student age is {{ student.age }}</span> <br>
+        <span>Student id is {{ student.id }}</span>
+        <hr>
+       </h2>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
