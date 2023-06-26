@@ -1,15 +1,11 @@
-.red{
-    color: red;
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.blue{
-    color: blue;
+.card{
+    width: 20%;
 }
-.black{
-    color:black;
-}
-.green{
-    color:green;
-}
-.yellow{
-    color:yellow;
+.card img{
+    width: 100%;
 }
