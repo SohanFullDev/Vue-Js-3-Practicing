@@ -3,9 +3,10 @@ const { createApp} = Vue;
 createApp({
     data(){
         return {
-            
+            /*
             title: "my_title",
-            myColor:"",
+            myColor:"blue",*/
+            myFont: 15,
         };
     },
 methods: {},

@@ -10,8 +10,17 @@
 </head>
 <body>
     <div id="app-root">
-        <h2 :class="myColor">My Title</h2>
+      <!-- 
+          <h2 :id="myColor" :class="myColor">My Title</h2>
         <input type="text" v-model="myColor">
+
+       -->
+
+      <!-- <h3 style="color:red;font-size:25px;">My style binding</h3>  -->
+      <!-- <h3 :style="`color: ${myColor}`">My style binding</h3>  -->
+      <h3 :style="`font-size: ${myFont}px`">My style binding</h3> 
+       <input type="number" name="" id="" v-model="myFont" />
+
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
