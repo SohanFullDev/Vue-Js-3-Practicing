@@ -1,16 +1,16 @@
-const { createApp } = Vue;
+const { createApp} = Vue;
+
+const my_component = {
+    template: "<h2> Hello from my first component</h2>"
+
+};
 
 const vue_1 = createApp({
     data(){
-        return {
-            age: 10,
-         };
+        return {};
     },
-    methods:{
-        checkRefs(){
-          //  console.log(this.$refs);
-           // console.log(this.$refs.myInput.value);
-           this.age = this.$refs.myInput.value;
-        },
+    components: {
+        my_component,
+
     },
 }).mount("#app_root");
