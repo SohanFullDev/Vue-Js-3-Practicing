@@ -1,9 +1,10 @@
 const { createApp} = Vue;
 
-createApp({
+const vue_1 = createApp({
     data(){
         return {
             name: "Ali",
+            age: 15,
           products: [
             {
                 title: "Symphony Phone",
@@ -54,11 +55,16 @@ createApp({
 
 }).mount("#app-root");
 
-createApp({
+const vue_2 = createApp({
     data(){
         return {
             name: 'Sohan',
             students:["Sohan","Sujan", "Sachin","Pasha"],
         };
+    },
+    methods: {
+        increaseAge(){
+            vue_1.age++;
+        },
     },
 }).mount("#app_root_2");

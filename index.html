@@ -25,14 +25,14 @@
           <p class="price">{{ item.price }}</p>
 
         </div>
-
-       </div>
+         </div>
+         <h2 style="text-align:center;">{{ age }}</h2>
     </div>
    
     <div id="app_root_2" class="students">
       <h2 style="text-align: center;">Students</h2>
       <h4 v-for="(name, i) in students" :key="i">{{ name }}</h4>
-
+      <button @click="increaseAge">Click Here</button>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./script.js"></script>
