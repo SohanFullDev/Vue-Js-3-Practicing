@@ -1,5 +1,10 @@
 const { createApp} = Vue;
 
+const data = {
+    age: 29,
+    name: "Sohan Sujan",
+}
+
 const my_component = {
     template: `<h2> Hello from my first component</h2>
         <h3>My Name is {{ name }} </h3>
@@ -7,10 +12,7 @@ const my_component = {
         <button @click='changeAge'>click me</button>
     `,
     data(){
-        return {
-            name: "Sohan",
-            age: 28,
-        };
+        return data;
     },
     methods: {
         changeAge(){
