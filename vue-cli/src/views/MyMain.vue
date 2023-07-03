@@ -1,21 +1,21 @@
 <template>
   <div class="my-main">
-    <MyHeading />
-
     <h2>This is my main page.</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-      tenetur? Enim, quae fuga facere maxime dignissimos dolore nihil incidunt
-      dolor non unde iste odit, labore tenetur ipsam earum amet cum?
-    </p>
+    <MyCont :students="students" />
   </div>
 </template>
 <script>
-import MyHeading from "@/components/MyHeading.vue";
+import MyCont from "@/components/MyContent.vue";
+
 export default {
   name: "MyMain",
   components: {
-    MyHeading,
+    MyCont,
+  },
+  data() {
+    return {
+      students: ["Brazil", "Argentina", "Panama"],
+    };
   },
 };
 </script>
