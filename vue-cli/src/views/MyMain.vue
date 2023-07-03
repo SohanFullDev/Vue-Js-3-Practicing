@@ -1,8 +1,8 @@
 <template>
   <div class="my-main">
-    <TheNav />
+    <MyHeading />
 
-    <h1>This is my main page.</h1>
+    <h2>This is my main page.</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
       tenetur? Enim, quae fuga facere maxime dignissimos dolore nihil incidunt
@@ -11,7 +11,21 @@
   </div>
 </template>
 <script>
+import MyHeading from "@/components/MyHeading.vue";
 export default {
   name: "MyMain",
+  components: {
+    MyHeading,
+  },
 };
 </script>
+<style scoped lang="scss">
+.my-main {
+  h2 {
+    color: red;
+  }
+  p {
+    color: green;
+  }
+}
+</style>
