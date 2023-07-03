@@ -1,7 +1,7 @@
 <template>
   <div class="my-content">
     <ul>
-      <li v-for="(student, i) in students" :key="i">
+      <li v-for="(student, i) in st" :key="i">
         {{ student }}
       </li>
     </ul>
@@ -9,7 +9,8 @@
 </template>
 <script>
 export default {
-  props: ["students"],
+  // props: ["students"],
+  props: ["st"],
 
   /*
   data() {
