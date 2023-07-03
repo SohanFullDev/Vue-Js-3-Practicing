@@ -11,12 +11,7 @@
   </div>
 </template>
 <script>
-import TheNav from "@/components/MyNav.vue";
-
 export default {
   name: "MyMain",
-  components: {
-    TheNav,
-  },
 };
 </script>
