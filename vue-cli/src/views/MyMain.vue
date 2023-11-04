@@ -2,6 +2,8 @@
   <div class="my-main">
     <h2>This is my main page.</h2>
     <MyCont :st="students" />
+    <hr />
+    <MyCont :st="students" />
   </div>
 </template>
 <script>

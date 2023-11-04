@@ -5,19 +5,22 @@
         {{ student }}
       </li>
     </ul>
+    <button @click="deleteSt">Change Ref</button>
   </div>
 </template>
 <script>
 export default {
-  // props: ["students"],
   props: ["st"],
-
-  /*
   data() {
     return {
-      students: ["Sohan", "Sujan", "Bishu"],
+      myStudents: this.st,
     };
-  },*/
+  },
+  methods: {
+    deleteSt() {
+      this.myStudents.shift();
+    },
+  },
 };
 </script>
 <style scoped>
