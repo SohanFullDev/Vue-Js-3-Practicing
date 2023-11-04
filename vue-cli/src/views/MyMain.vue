@@ -1,9 +1,9 @@
 <template>
   <div class="my-main">
     <h2>This is my main page.</h2>
-    <MyCont :st="students" />
+    <MyCont :st="students" :isActive="isActive" />
     <hr />
-    <MyCont :st="students" />
+    <MyCont :st="students" :isActive="isActive" />
   </div>
 </template>
 <script>
@@ -17,6 +17,7 @@ export default {
   data() {
     return {
       students: ["Brazil", "Argentina", "Panama"],
+      isActive: true,
     };
   },
 };
